@@ -14,9 +14,9 @@ Pre-print coming soon!
 View and download the poster here.
 
 ## Code
-- WGCNA
+- [WGCNA](Code)
 - [Transcriptomic plasticity](Code/Plasticity.R)
-- Reaction Norms
+- [Reaction Norms](Code/ReactionNorms.R)
 
 ## Contact
 Mascha Dix \
