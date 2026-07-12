@@ -13,9 +13,7 @@ View and download the poster here.
 ## Code
 - WGCNA
 - Transcriptomic plasticity
-- Sleuth
 - Reaction Norms
-- GO and REVIGO annotations
 
 ## Contact
 Mascha Dix \
