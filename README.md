@@ -11,7 +11,8 @@ Rising ocean temperatures are threatening the persistence of coral reef ecosyste
 Pre-print coming soon!
 
 ## ICRS 2026 Poster
-View and download the poster here.
+View and download the poster [here](Poster/ICRS2026_Poster.png).
+<img width="720" height="1018" alt="ICRS2026_Poster" src="https://github.com/user-attachments/assets/5a4f26ea-7582-4f7a-8c46-0900dc4123b3" />
 
 ## Code
 - [WGCNA](Code)
