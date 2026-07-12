@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Home
+title: Thermal Preconditioning Induces Distinct Transcriptional Response Strategies in _Exaiptasia diaphana_
 ---
 
-# Thermal Preconditioning Induces Distinct Transcriptional Response Strategies in _Exaiptasia diaphana_
 A transcriptional phenotyping approach to investigate the effect of thermal history on regulatory response. 
 
-<img width="265" height="238" alt="ChatGPT Image Jun 25, 2026, 02_35_24 PM" src="https://github.com/user-attachments/assets/b5704b03-9414-4242-a7ca-6705cf3583bb" /> \
+<img width="397" height="357" alt="ChatGPT Image Jun 25, 2026, 02_35_24 PM" src="https://github.com/user-attachments/assets/b5704b03-9414-4242-a7ca-6705cf3583bb" /> \
 <sub>Image taken by Dr Guoxin Cui, altered using ChatGPT.</sub>
 
 ## Abstract
@@ -20,12 +19,14 @@ Pre-print coming soon!
 Download the poster [here](Poster/ICRS2026_Poster.png).
 
 ## Code
-- [WGCNA](Code)
+- [WGCNA](Code/WGCNA.R)
 - [Transcriptomic plasticity](Code/Plasticity.R)
 - [Reaction Norms](Code/ReactionNorms.R)
 
 ## Contact
 Mascha Dix \
+PhD Candidate in the Coral Symbiomics Lab \
+King Abdullah University of Science and Technology \
 mascha.dix@kaust.edu.sa 
 
 
