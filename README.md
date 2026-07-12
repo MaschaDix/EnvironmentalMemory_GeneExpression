@@ -15,7 +15,7 @@ View and download the poster here.
 
 ## Code
 - WGCNA
-- Transcriptomic plasticity (Code/Plasticity.R)
+- [Transcriptomic plasticity](Code/Plasticity.R)
 - Reaction Norms
 
 ## Contact
