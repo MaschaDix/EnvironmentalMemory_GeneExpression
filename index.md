@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Thermal Preconditioning Induces Distinct Transcriptional Response Strategies in Exaiptasia diaphana
+title: Thermal Preconditioning Induces Distinct Transcriptional Response Strategies in _Exaiptasia diaphana_
 ---
 
 A transcriptional phenotyping approach to investigate the effect of thermal history on regulatory response. 
@@ -28,6 +28,3 @@ Mascha Dix \
 PhD Candidate in the Coral Symbiomics Lab \
 King Abdullah University of Science and Technology \
 mascha.dix@kaust.edu.sa 
-
-
-
