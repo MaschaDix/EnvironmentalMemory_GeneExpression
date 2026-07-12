@@ -11,11 +11,11 @@ Rising ocean temperatures are threatening the persistence of coral reef ecosyste
 Pre-print coming soon!
 
 ## ICRS 2026 Poster
-View and download the poster here: [Download the poster (PDF)](ICRS 2026 Poster/ICRS poster designs.jpg)
+View and download the poster here.
 
 ## Code
 - WGCNA
-- Transcriptomic plasticity
+- Transcriptomic plasticity (Code/Plasticity.R)
 - Reaction Norms
 
 ## Contact
