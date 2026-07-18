@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Thermal Preconditioning Induces Distinct Transcriptional Response Strategies in _Exaiptasia diaphana_
+title: Thermal Preconditioning Induces Distinct Transcriptional Response Strategies in Exaiptasia diaphana
 ---
 
 A transcriptional phenotyping approach to investigate the effect of thermal history on regulatory response. 
