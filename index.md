@@ -23,6 +23,8 @@ Download the poster [here](Poster/ICRS2026_Poster.png).
 - [Transcriptomic plasticity](Code/Plasticity.R)
 - [Reaction Norms](Code/ReactionNorms.R)
 
+Note: if you do not wish to download the code directly, please follow the link to my GitHub at the top of the page to view the code there.
+
 ## Contact
 Mascha Dix \
 PhD Candidate in the Coral Symbiomics Lab \
