@@ -1,8 +1,8 @@
 ﻿Sample_ID,Treatment,Replicate,Acute_heat,Heat_history,History_type,Change_PAM,Change_SD,Mortality
 STP_C1,STP_Control,1,Control,TRUE,ST_primed,3.92,-24.59,0
-STP_C2,STP_Control,2,Control,TRUE,ST_primed,3.92,-24.59,0
-STP_C3,STP_Control,3,Control,TRUE,ST_primed,9.79,-23.43,0
-STP_C4,STP_Control,4,Control,TRUE,ST_primed,9.79,-23.43,0
+STP_C2,STP_Control,1,Control,TRUE,ST_primed,3.92,-24.59,0
+STP_C3,STP_Control,2,Control,TRUE,ST_primed,9.79,-23.43,0
+STP_C4,STP_Control,2,Control,TRUE,ST_primed,9.79,-23.43,0
 LTP_H1,LTP_Heat,1,Heat,TRUE,LT_primed,-1.26,-23.47,0
 LTP_H2,LTP_Heat,2,Heat,TRUE,LT_primed,13.88,54.13,0
 LTP_H3,LTP_Heat,3,Heat,TRUE,LT_primed,0.47,-13.52,0
@@ -22,6 +22,6 @@ N_C1,N_Control,1,Control,FALSE,Naive,5.81,-34.00,0
 N_C2,N_Control,2,Control,FALSE,Naive,2.01,4.68,0
 N_C3,N_Control,3,Control,FALSE,Naive,5.97,-7.51,0
 STP_H1,STP_Heat,1,Heat,TRUE,ST_primed,-0.18,7.22,0
-STP_H2,STP_Heat,2,Heat,TRUE,ST_primed,-0.18,7.22,0
-STP_H3,STP_Heat,3,Heat,TRUE,ST_primed,0.81,-27.69,0
-STP_H4,STP_Heat,4,Heat,TRUE,ST_primed,0.81,-27.69,0
+STP_H2,STP_Heat,1,Heat,TRUE,ST_primed,-0.18,7.22,0
+STP_H3,STP_Heat,2,Heat,TRUE,ST_primed,0.81,-27.69,0
+STP_H4,STP_Heat,2,Heat,TRUE,ST_primed,0.81,-27.69,0
