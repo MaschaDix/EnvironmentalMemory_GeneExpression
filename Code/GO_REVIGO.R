@@ -3,6 +3,12 @@
 
 library(topGO)
 library(ggplot2)
+library(GOSemSim)
+# BiocManager::install("rrvgo")
+library(rrvgo)
+# BiocManager::install("org.Dm.eg.db")
+library(org.Dm.eg.db)
+
 
 setwd()
 
@@ -89,3 +95,59 @@ ggplot(results_table, aes(x = Term,
     axis.title = element_text(size = 16, color = "#202020")
   )
 dev.off()
+
+
+
+# REVIGO
+# used this just to make lists of parent terms
+setwd() # make a REVIGO folder that contains two subfolders, one is just the topGO_output folder and the other is for the REVIGO_output
+
+base_dir <- "./topGO_output"
+
+folders <- list.dirs(base_dir, recursive = FALSE)
+
+
+for (folder in folders) {
+  # List only BP files in this folder
+  bp_files <- list.files(folder, pattern = "^bp_.*\\.txt$", full.names = TRUE)
+  
+  for (bp_file in bp_files) {
+    sample_name <- tools::file_path_sans_ext(basename(bp_file))
+    message("Processing file: ", bp_file)
+    
+    # Read GO enrichment table
+    go_table <- try(read.delim(bp_file, header = TRUE, sep = "\t", stringsAsFactors = FALSE))
+    
+    if (inherits(go_table, "try-error") || nrow(go_table) == 0 || !("GO.ID" %in% colnames(go_table))) {
+      message("Skipping ", bp_file, ": file not readable or malformed.")
+      next
+    }
+    
+    # Filter significant terms (p < 0.05)
+    sig_go <- go_table[as.numeric(go_table$P_value) < 0.05, c("GO.ID", "P_value")]
+    if (nrow(sig_go) < 2) {
+      message("Skipping ", sample_name, ": fewer than 2 significant GO terms.")
+      next
+    }
+    
+    # Calculate similarity matrix
+    simMatrix <- calculateSimMatrix(sig_go$GO.ID,
+                                    orgdb = "org.Dm.eg.db", 
+                                    ont = "BP",
+                                    method = "Rel")
+    
+    # Set scores for each GO term
+    scores <- setNames(-log10(sig_go$P_value), sig_go$GO.ID)
+    
+    # Reduce and group similar terms
+    reducedTerms <- reduceSimMatrix(simMatrix,
+                                    scores = scores,
+                                    threshold = 0.8,
+                                    orgdb = "org.Dm.eg.db")
+    colnames(reducedTerms)[1] <- "category"
+    
+    # Export reduced terms
+    file_name <- paste0("./REVIGO_output/", sample_name, "_reducedTerms.csv")
+    write.csv(reducedTerms, file_name, quote = FALSE)
+  }
+}
